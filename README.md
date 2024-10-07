@@ -3,13 +3,13 @@ Demand Forecasting
 **Author**
 Ryan Bein
 #### Executive summary
-  Objective:
+  ###Objective:
   The primary objective of this capstone project was to investigate how machine learning models could improve the accuracy of demand forecasting in a manufacturing and distribution environment. Accurate demand forecasting is critical for optimizing inventory levels, reducing waste, ensuring   customer satisfaction, and enhancing overall operational efficiency.
   
-  Data:
+  ###Data:
   The analysis leveraged the M5 Forecasting Accuracy dataset from Kaggle, which includes daily sales data, calendar events, and prices across multiple stores and product categories. The dataset provided a comprehensive view of historical sales, external events (e.g., holidays), and price fluctuations that could influence future demand.
   
-  Methodology:
+  ###Methodology:
   Three machine learning models were considered for this analysis:
   
   ARIMA (AutoRegressive Integrated Moving Average): A traditional time-series forecasting model.
@@ -17,21 +17,21 @@ Ryan Bein
   XGBoost: A gradient boosting algorithm that excels at handling complex patterns in data and was used in combination with time-based feature engineering.
   The project followed a structured methodology:
   
-  Data Preprocessing: This involved handling missing values, scaling the data, creating time-based features, and splitting the dataset into training and testing sets.
+  ###Data Preprocessing: This involved handling missing values, scaling the data, creating time-based features, and splitting the dataset into training and testing sets.
   Model Training: The models were trained on the historical sales data, and hyperparameters were optimized to improve performance.
   Evaluation Metrics: The models were evaluated using standard metrics such as Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE) to assess the accuracy of the predictions.
-  Key Results:
+  ###Key Results:
   LSTM Model: The LSTM model, which is designed to capture long-term dependencies in sequential data, produced strong results, with an RMSE of 0.941 and an MAE of 0.410. These metrics indicate that the model, on average, deviated from the actual sales figures by less than 1 unit, suggesting high accuracy in predicting demand.
   Performance Insights: The relatively low RMSE and MAE suggest that the LSTM model was effective at learning the temporal patterns in the data. However, a slight gap between RMSE and MAE indicates occasional larger errors, possibly due to sudden spikes or drops in demand (e.g., during promotions or holidays).
   Outlier Detection: The performance of the LSTM model could be improved further by investigating outliers and refining the model’s ability to predict extreme cases, such as abnormal demand spikes driven by events.
   Conclusions:
   The machine learning models demonstrated significant potential in improving demand forecasting accuracy compared to traditional approaches. Specifically, LSTM showed strong performance, indicating that advanced machine learning techniques can effectively capture complex temporal patterns and non-linear relationships in sales data. The project highlights the importance of model fine-tuning, feature engineering, and handling external events in building robust demand forecasting models.
   
-  Recommendations:
+  ###Recommendations:
   Adoption of Machine Learning for Demand Forecasting: The results of this project strongly suggest that machine learning, particularly LSTM, can outperform traditional forecasting models in manufacturing and distribution settings. Companies should consider adopting these techniques to improve their forecasting capabilities.
   Further Model Tuning: While the models performed well, there is room for improvement, particularly in handling extreme demand fluctuations. Further experimentation with feature engineering, such as incorporating more granular external factors (e.g., weather or local events), could enhance accuracy.
   Scaling Across Products: The success of these models with the dataset indicates that they could be applied at scale across multiple products and stores, helping to optimize inventory levels and improve decision-making across the supply chain.
-  Business Impact:
+  ###Business Impact:
   By improving the accuracy of demand forecasting, organizations can expect to see tangible benefits, such as reduced inventory holding costs, minimized stockouts, improved cash flow, and enhanced customer satisfaction. The machine learning approach outlined in this project provides a scalable and adaptable solution for businesses seeking to leverage data-driven insights for more efficient operations.
 
 #### Rationale
